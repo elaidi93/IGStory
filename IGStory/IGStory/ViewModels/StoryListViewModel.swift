@@ -31,7 +31,6 @@ class StoryListViewModel: ObservableObject {
     func loadStories() {
         self.stories = persistenceManager.loadStories()
         
-        // If no stories are persisted, create mock data
         if self.stories.isEmpty {
             let storyImages = [
                 "https://static.wikia.nocookie.net/onepiece/images/7/7f/Monkey_D._Luffy_Anime_Post_Ellipse_Infobox.png/revision/latest?cb=20170617172443&path-prefix=fr",
